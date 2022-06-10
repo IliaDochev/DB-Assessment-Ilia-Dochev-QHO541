@@ -1,0 +1,192 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+</style>
+
+:root{
+    --dark: #112233;
+    --light: #f9fbff;
+    --border: #5b92e5;
+    -border-btn: #cdc9c9;
+}
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    margin: auto;
+}
+
+.nav-brand{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.border-shadow{
+    border: 1px solid var(--border-btn);
+    box-shadow: 1px 3px 10px #442200;
+}
+
+.text-dark{
+    color: var(--dark)
+}
+
+.inline{
+    display: inline-block;
+}
+
+.text-light{
+    color: var(--light)
+}
+
+.text-gradient{
+    background: linear-gradient(to right, black, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#project-header nav{
+    background-color: coral;
+    padding: 1em 0;
+    width: 100%;
+}
+
+#site-main{
+    margin-top: 6em;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#site-main .container .box-nav>a{
+    font-size: 1em;
+    padding: .5em 1em;
+}
+
+#site-main .container form{
+    margin: 2em 0;
+}
+
+table{
+    border-spacing: 0px;
+    width: 100%;
+}
+
+.table td, table th{
+    padding: .75em;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+.table td > a.btn{
+    padding: .1em .7em;
+    font-size: 1em;
+    margin: 0 .2em;
+}
+
+.table tr:hover{
+    background-color: #5b92e5;
+}
+
+.table tr:hover td>a{
+    box-shadow: none;
+}
+
+.table .thread-dark th{
+    color: #fff;
+    background-color: grey;
+    border-color: grey;
+}
+
+@media only screen and (max-width: 1024px){
+    table, thead, tbody, th, td, tr{
+        display: block;
+    }
+
+    thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr{border: 1px solid --borderW}
+
+    td{
+        border: none;
+        position: relative;
+    }
+}
+
+.form-title{
+    margin-top: 2em;
+}
+
+.form-title>h2{
+    padding: .5em 0;
+}
+
+.new_student{
+    max-width: 786px;
+    margin: auto;
+}
+
+#update_student .form-group, 
+#new_student .form-group{
+    
+    margin: .4em 0;
+}
+
+#update_student .form-group input[type="text"],
+#new_student .form-group input[type="text"]{
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid black;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+}
+
+#update_student .form-group .radio,
+#new_student .form-group .radio{
+    margin: .6em 1.5em;
+}
+
+#update_student .form-group .btn,
+#new_student .form-group .btn{
+
+    width: 100%;
+    padding: .9em 1em;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    border-radius: .2em;
+    margin: .5em 0;
+}
+
+#update_student .form-group .btn:hover,
+#new_student .form-group .btn:hover{
+
+    background-color: yellow;
+
+}
